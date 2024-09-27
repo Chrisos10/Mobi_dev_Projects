@@ -8,4 +8,4 @@ The Flutter Temperature Converter App is a simple tool for converting temperatur
 - Keep track of all conversions.
 
 
-The app features a clean, user-friendly interface, with dark mode styling and intuitive controls. It’s built using Flutter and follows responsive design principles for smooth usage on both mobile devices and tablets.
+The app features a clean, user-friendly interface, with dark mode styling and intuitive controls.
