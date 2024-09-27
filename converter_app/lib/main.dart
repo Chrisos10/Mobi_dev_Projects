@@ -18,7 +18,7 @@ class TemperatureConverterApp extends StatelessWidget {
         ),
         textTheme: const TextTheme(
           bodyLarge: TextStyle(
-            fontSize: 16, // Reduced text size
+            fontSize: 16,
             color: Colors.white70,
           ),
           bodyMedium: TextStyle(
@@ -26,7 +26,7 @@ class TemperatureConverterApp extends StatelessWidget {
             color: Colors.white60,
           ),
           headlineSmall: TextStyle(
-            fontSize: 22, // Reduced headline size
+            fontSize: 22,
             fontWeight: FontWeight.bold,
             color: Colors.amberAccent,
           ),
@@ -117,12 +117,12 @@ class _TemperatureConverterScreenState
         appBar: AppBar(
           title: const Text(
             "Converter", 
-            style: TextStyle(color: Colors.white), // Set text color to white
+            style: TextStyle(color: Colors.white),
             ),
 
           backgroundColor: const Color.fromARGB(255, 18, 18, 27),
         ),
-        body: SingleChildScrollView( // Allows scrolling in case of overflow
+        body: SingleChildScrollView(
           child: Padding(
             padding: const EdgeInsets.all(16.0),
             child: Column(
@@ -164,16 +164,16 @@ class _TemperatureConverterScreenState
                 ),
                 const SizedBox(height: 20),
                 SizedBox(
-                  height: 60, // Increase the height of the input box
+                  height: 60,
                   child: TextField(
                     controller: _tempController,
                     focusNode: _focusNode,
                     decoration: const InputDecoration(
                       labelText: "Enter temperature",
-                      labelStyle: TextStyle(fontSize: 16, color: Colors.white), // Adjusted label font size
+                      labelStyle: TextStyle(fontSize: 16, color: Colors.white),
                     ),
                     keyboardType: const TextInputType.numberWithOptions(decimal: true),
-                    style: const TextStyle(fontSize: 18, color: Colors.white), // Adjusted input text size
+                    style: const TextStyle(fontSize: 18, color: Colors.white),
                     onTap: () {
                       FocusScope.of(context).requestFocus(_focusNode);
                     },
@@ -186,7 +186,7 @@ class _TemperatureConverterScreenState
                       FocusScope.of(context).unfocus();
                       _convert();
                     },
-                    child: const Text("Convert", style: TextStyle(color: Colors.black)), // Adjusted text color to black for contrast
+                    child: const Text("Convert", style: TextStyle(color: Colors.black)),
                   ),
                 ),
                 const SizedBox(height: 20),
@@ -204,7 +204,7 @@ class _TemperatureConverterScreenState
                 ),
                 const SizedBox(height: 10),
                 SizedBox(
-                  height: 200, // Adjust the height to prevent overflow
+                  height: 200,
                   child: ListView.builder(
                     itemCount: _history.length,
                     itemBuilder: (context, index) {
